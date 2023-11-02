@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; /*Remove os marcadores padrão que aparecem antes dos itens da lista.*/
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    width: 100vw; /*Cria um elemento que preenche toda a largura da janela de visualização*/ 
+    height: 100vh; /*Ao definir a altura igual à largura, o elemento terá uma forma quadrada.*/
+    font-size: 62.5%; /*Esta técnica é útil para manter uma boa consistência no tamanho da fonte em toda a página e para facilitar ajustes rápidos e proporcionais em tamanhos de fonte para diferentes partes do conteúdo.*/
+    overflow-x: hidden; /*Remove a barra de rolagem vertical*/
+}
+
+/* CABEÇALHO */
+
+.content {
+    width: 100vw;
+    height: 180px;
+    justify-content: space-around; /*Coloca espaçamento entre os itens*/
+    align-items: center; /*Alinhar ao centro na parte vertical*/
+    background-color: white;
+	color: #252525;
+    padding-left: 2rem;
+}
+
+.website-header { 
+	padding: 20px;
+	height: 80px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.website-header img {
+	width: 200px;
+	height: 60px;	
+	margin: 0 30px;
+}  
+
+.content ul {
+	margin: 50px 0 0 0;
+	background-color: white;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.content .list-menu {
+    width: 600px;
+	padding-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a {
+	text-decoration: none; /*Remove os sublinhados de links, para que pareçam um texto comum.*/
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-right: 3.87rem;
+    padding-left: 3.87rem;
+
+    /*padding: 1rem 1rem 3.87rem 3.87rem;*/ /*É possível escrever também nessa notação:  top, right, bottom e left*/
+
+    color: #252525;
+    font-size: 1.8rem;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+    border-bottom: 4px solid #0001FC;
+    color: #0001FC;
+}
+
+/* MAIN */
+
+#popular-news {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px 5%;
+}
+
+#popular-news h2 {
+	margin: 0;
+	padding: 5px;
+	color: #fff;
+}
+
+#featured h2 {
+	background-color: black;
+}
+
+#latest h2 {
+	background-color: darkred;
+}
+
+#our-picks h2 {
+	background-color: darkblue;
+}
+
+#featured {
+	flex: 2;
+}
+
+#latest,#our-picks {
+	flex: 1;
+}
+
+#popular-news img {
+	width: 100%;
+	filter: brightness(0.7);
+	transition-duration: 500ms;
+}
+
+.carousel, .news-container {
+	position: relative;
+}
+
+.carousel-text {
+	position: absolute;
+	word-wrap: normal;
+	bottom: 5px;
+	z-index: 2;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bolder;
+	padding: 0 10px;
+	transition-duration: 500ms;
+}
+
+.news-container .carousel-text {
+	font-size: 1.7rem;
+}
+
+.carousel-date {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: rgba(255,255,255,0.7);
+	font-weight: 300;
+}
+
+section {
+	cursor: pointer;
+}
+
+.news-container:hover > .carousel-text {
+	bottom: 10px;
+}
+
+.news-container:hover > img {
+	filter: brightness(0.4);
+}
+
+.more-news {
+	background-color: #333;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 3%;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+
+.news-section {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 68%;
+	justify-content: space-between;
+}
+
+.world h2 {	
+	background-color: #b2175b;
+}
+
+.sport h2 {
+	background-color: #3c1b75;
+}
+
+.world h2, .sport h2 {
+    margin: 10px 0 0 0;
+	padding: 0 10px;
+}
+
+.more-news img { 
+	width: 100%;
+	height: 250px;
+}
+
+.world,.sport {
+	flex-basis: 45%;
+	font-size: 1.2rem;
+}
+
+aside {
+	width: 90%;
+	padding: 10px;
+	flex-basis: 27%;
+	border: 1px solid #686666;
+	border-radius: 5px;
+	margin: 10px;
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}
+
+.recent-news {
+	display: flex;
+}
+
+.recent-news img {
+	width: 70px;
+	height: 70px; 
+	margin: 10px;
+}
+
+.recent-news p {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+    color: #252525; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.social-links .about {
+    max-width: 50%; 
+    margin: 0 auto; 
+    text-align: left; 
+	font-size: 1.3rem;
+}
+
+.social-links .Subscribe {
+    max-width: 50%; 
+    margin: 0 auto; 
+    text-align: left; 
+	font-size: 1.3rem;
+}
+
+.footer-buttons {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #007bff; 
+    border-radius: 4px;
+    font-size: 1.3rem; 
+}
+
+.footer-buttons:hover {
+    background-color: #0056b3; 
+}
+
+.copyright {
+	width: 100%;
+	background-color: black;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.1rem;
+}
+
