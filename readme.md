@@ -16,7 +16,7 @@ Este projeto consiste em um site de notícias fictício chamado "News Internatio
 - Escolhas da Equipe: A seção "NOSSAS ESCOLHAS" apresenta duas notícias escolhidas pela equipe do site, cada uma com uma imagem e um título. Os usuários podem acessar essas notícias clicando nos links.
 
 <div align="center">
-  <br><img src="https://media.discordapp.net/attachments/1002050908156334082/1169731473587314688/Captura_de_tela_2023-11-02_170330.png?ex=65567853&is=65440353&hm=61c04089fd725258c4fb6dc7e1bfc2af807190acb9e73a9a730b57e315dcd7b3&=&width=941&height=468" aling=center>
+  <br><img src="https://github.com/user-attachments/assets/89672683-f71b-4ffd-ac6e-084f7de7c10c" aling=center>
 </div>
 
 ## Personalização
